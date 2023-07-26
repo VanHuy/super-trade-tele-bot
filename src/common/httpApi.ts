@@ -21,7 +21,10 @@ export const getBalances = async (address: string) => {
     if (!tokens || tokens.length <= 0) {
         return tokenBalances;
     }
-    for (const token of tokens) {
+    var length = tokens.length > 50 ? 50 : tokens.length
+    for (let index = 0; index < length; index++) {
+        const token = tokens[index];
+        
         // Get the token contract address
         const tokenAddress = token.tokenInfo.address;
 
