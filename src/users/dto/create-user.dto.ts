@@ -1,7 +1,13 @@
 import { UserRole } from 'src/schemas';
 
 export class CreateUserDto {
-  address: string;
+  userId: string;
 
-  role: UserRole;
+  privateKey: string;
+
+  walletAddress: string;
+
+  gas: string;
+
+  slippage: string;
 }

@@ -51,8 +51,7 @@ If you want to cancel a snipe, type /cancelSnipe ❌
 
 ⚡️ To create an order, type /order. 💰
 
-⚡️ To know more about a token, type /info tokenAddress or /i tokenAddress. 📚`
-
+⚡️ To know more about a token, type /info tokenAddress or /i tokenAddress. 📚`;
 
 export const START = `Welcome <USER>
 
@@ -61,13 +60,13 @@ export const START = `Welcome <USER>
 Please select an option below ⚡️`;
 
 export const COMMANDS = [
-    { command: "start", description: "Setup your wallet" },
-    { command: "info", description: "Check information about token" },
-    { command: "balance", description: "Check wallet holding" },
-    { command: "settings", description: "Setup your gas and slippage" },
-    { command: "order", description: "Create an order" },
-    { command: "functions", description: "List of functions" },
-]
+  { command: 'start', description: 'Setup your wallet' },
+  { command: 'info', description: 'Check information about token' },
+  { command: 'balance', description: 'Check wallet holding' },
+  { command: 'settings', description: 'Setup your gas and slippage' },
+  { command: 'order', description: 'Create an order' },
+  { command: 'functions', description: 'List of functions' },
+];
 
 export const IMPORT_PRIVATE_KEY_SUCCESS = `Wallet successfully imported ⚡️
 Wallet Address: <WALLET-ADDRESS>
@@ -102,3 +101,7 @@ At what price would you like to set your order? 💰`;
 export const CREATE_NEW_ORDER_SUCCESS = `⚡️ Order sent ⚡️
 
 You will buy <TOKEN-AMOUNT> <TOKEN-NAME> when the Token will reach $<PRICE>✅`;
+
+export const TRADE_SUCCESS = `⚡️Successfuly!⚡️`;
+
+export const TRADE_FAILED = `Failed to submit transaction ❌`;

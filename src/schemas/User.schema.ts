@@ -27,25 +27,22 @@ export class User {
     sparse: true,
     trim: true,
   })
-  email: string;
-
-  @Prop({ type: String })
-  password: string;
-
-  @Prop({ type: String, default: UserRole.USER })
-  role: UserRole;
+  userId: string;
 
   @Prop({ default: UserStatus.ACTIVE })
   status: UserStatus;
 
   @Prop({ type: String })
-  codeResetPassword: string;
+  privateKey: string;
 
-  @Prop({ type: Date })
-  codeResetPasswordExpiredAt: Date;
+  @Prop({ type: String })
+  walletAddress: string;
 
-  @Prop({ type: Date })
-  passwordChangedAt: Date;
+  @Prop({ type: String })
+  gas: string;
+
+  @Prop({ type: String })
+  slippage: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

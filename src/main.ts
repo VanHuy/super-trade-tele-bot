@@ -16,7 +16,7 @@ async function bootstrap() {
   global.bot.launch();
 
   const app = await NestFactory.create(AppModule, {
-    logger: process.env.LOG_LEVEL?.split(',') as LogLevel[]
+    logger: process.env.LOG_LEVEL?.split(',') as LogLevel[],
   });
 
   app.setGlobalPrefix(process.env.GLOBAL_API_PREFIX);
